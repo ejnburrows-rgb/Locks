@@ -1,0 +1,6 @@
+{
+  "name": "PRO LOCKSMITH",
+  "description": "Fast, reliable 24/7 locksmith services for residential, commercial, and automotive lockouts, key duplication, smart locks, and emergency response.",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
