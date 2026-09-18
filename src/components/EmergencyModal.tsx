@@ -70,7 +70,7 @@ export const EmergencyModal: React.FC<EmergencyModalProps> = ({
           {calledSimulated && (
             <div className="p-3 bg-emerald-50 text-emerald-900 rounded-xl text-xs flex items-center gap-2 border border-emerald-200">
               <CheckCircle className="w-4 h-4 text-emerald-600 shrink-0" />
-              <span>Call initiated. Our dispatcher is answering your emergency request.</span>
+              <span>Your phone app should open with the emergency number ready to dial.</span>
             </div>
           )}
 
