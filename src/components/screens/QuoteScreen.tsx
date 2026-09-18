@@ -144,7 +144,7 @@ export const QuoteScreen: React.FC<QuoteScreenProps> = ({
           <div>
             <h2 className="text-2xl font-bold text-[#191c1e]">Request a Quote</h2>
             <p className="text-xs sm:text-sm text-[#45464d] mt-0.5">
-              Fill out the form below and a licensed security specialist will reply shortly.
+              Use the form to organize your request, then contact the business directly by phone or email.
             </p>
           </div>
           <div className="hidden sm:flex items-center gap-1.5 text-xs text-[#556477] bg-[#f2f4f6] px-3 py-1.5 rounded-lg font-mono">
@@ -158,9 +158,9 @@ export const QuoteScreen: React.FC<QuoteScreenProps> = ({
             <div className="w-14 h-14 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center mx-auto">
               <CheckCircle2 className="w-8 h-8" />
             </div>
-            <h3 className="text-2xl font-bold text-emerald-950">Quote Request Received!</h3>
+            <h3 className="text-2xl font-bold text-emerald-950">Quote Request Ready</h3>
             <p className="text-sm text-emerald-800 max-w-md mx-auto">
-              Thank you, <strong>{formData.fullName}</strong>. A licensed locksmith technician has received your request for <strong>{formData.serviceType}</strong> and will call or text <strong>{formData.phoneNumber}</strong> within 10 minutes.
+              Thank you, <strong>{formData.fullName}</strong>. Your request details are ready, but this preview does not transmit them automatically. Call <strong>{COMPANY_INFO.phone}</strong> or email <strong>{COMPANY_INFO.email}</strong> to send the request.
             </p>
             <div className="pt-2">
               <button
