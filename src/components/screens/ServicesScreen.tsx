@@ -45,7 +45,7 @@ export const ServicesScreen: React.FC<ServicesScreenProps> = ({
           Professional Locksmith Services
         </h1>
         <p className="text-base sm:text-lg text-[#45464d] max-w-3xl leading-relaxed">
-          We provide comprehensive security solutions for your home, business, and vehicle. Expert technicians available 24/7 for all your locksmith needs.
+          Residential, commercial, and automotive locksmith services. Call to confirm current availability, scope, and ETA.
         </p>
 
         {/* Filter Pills */}
@@ -123,7 +123,7 @@ export const ServicesScreen: React.FC<ServicesScreenProps> = ({
                 </h2>
               </div>
               <div className="absolute top-3 right-3 bg-[#131b2e]/85 backdrop-blur-xs text-white text-xs font-semibold px-3 py-1 rounded-full">
-                From ${service.startingPrice}
+                Quote required
               </div>
             </div>
 
@@ -200,7 +200,7 @@ export const ServicesScreen: React.FC<ServicesScreenProps> = ({
             Keyless Access & Smart Lock Installations
           </h2>
           <p className="text-sm sm:text-base text-[#bec6e0] leading-relaxed">
-            Upgrade your security with smartphone-controlled keyless locks, biometric fingerprint scanners, keypad entry, and commercial grade-1 deadbolts. We supply and configure major brands with full warranty.
+            Ask about compatible smart locks, keypad entry, access-control hardware, and high-security lock options. Confirm installation scope and applicable manufacturer warranty terms before purchase.
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-4">
@@ -212,7 +212,7 @@ export const ServicesScreen: React.FC<ServicesScreenProps> = ({
             <div className="bg-white/10 backdrop-blur-xs p-3.5 rounded-xl border border-white/10">
               <Shield className="w-5 h-5 text-[#F97316] mb-1.5" />
               <div className="font-bold text-sm">High-Security Deadbolts</div>
-              <div className="text-xs text-[#bec6e0]">Drill-proof, pick-proof, bump-resistant</div>
+              <div className="text-xs text-[#bec6e0]">Ask about high-security options</div>
             </div>
             <div className="bg-white/10 backdrop-blur-xs p-3.5 rounded-xl border border-white/10">
               <Key className="w-5 h-5 text-[#F97316] mb-1.5" />
@@ -226,7 +226,7 @@ export const ServicesScreen: React.FC<ServicesScreenProps> = ({
               onClick={() => onNavigate('quote')}
               className="bg-[#F97316] hover:bg-[#EA580C] text-white font-bold px-6 py-3 rounded-xl text-sm transition-all"
             >
-              Get Free Hardware Consultation
+              Request Hardware Consultation
             </button>
             <button
               onClick={onEmergencyCall}
