@@ -2,29 +2,29 @@
 
 **Authoritative application branch:** `main`
 
-## September 18, 2026 cleanup
+## September 19, 2026 cleanup
 
-- The package identity was normalized from `react-example` to `pro-locksmith-site`.
-- A repository README and contributor rules were added.
-- Quote-form copy was corrected so the preview no longer claims a technician received information that was never transmitted.
-- Emergency-call copy was corrected so opening the dialer is not described as a dispatcher already answering.
+- Package identity is `pro-locksmith-site`.
+- README, contributor rules, and this status file are current.
+- Quote-form copy does not claim information was transmitted when no backend exists.
+- Emergency-call copy does not claim a dispatcher answered when only the phone dialer was opened.
+- The simulated dispatch tracker, invented technician assignment, fixed ETA progression, and fake live-GPS claims were removed.
+- Unverified customer testimonials and review-source claims were removed.
+- Unverified licensing/bonding/insurance assertions, fixed arrival promises, fixed starting prices, and blanket warranty/guarantee claims were removed from customer-facing copy.
+- Customer-facing copy now tells visitors to confirm current ETA, estimate, credentials, and warranty terms before authorizing work.
 
 ## Branch state
 
 - `main` contains the current application.
 - `gh-pages` has unrelated Git history with no common ancestor to `main`.
-- Because of that, `gh-pages` is preserved until its hosting/deployment role is explicitly verified. It should not be merged into `main` merely for cleanup.
+- `gh-pages` contains a compiled site artifact and is preserved until its hosting role can be verified. It must not be merged into `main`.
 
-## Production blockers
+## Remaining production requirements
 
-The repository currently contains business-facing claims and testimonial data that require owner verification before launch, including licensing/insurance, response times, prices, guarantees, review sources, and technician/customer identities.
+1. Owner-verify the legal business identity, contact details, and actual service area.
+2. Replace temporary external image URLs with durable owned/licensed assets.
+3. Implement real lead delivery only if the quote form is intended to transmit requests.
+4. Verify the authoritative production deployment and hosting configuration.
+5. Run `npm run lint` and `npm run build` in a functioning runner or local environment.
 
-The quote form remains local-only; real lead delivery is not implemented.
-
-## Release checks
-
-1. Verify business/customer-facing facts.
-2. Replace temporary external assets where needed.
-3. Implement and test real quote delivery if required.
-4. `npm run lint`
-5. `npm run build`
+No testimonial, licensing, ETA, pricing, or warranty claim should be restored without evidence.
