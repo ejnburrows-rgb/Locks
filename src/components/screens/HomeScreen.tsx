@@ -1,7 +1,6 @@
 import React from 'react';
 import { ScreenType, ServiceItem } from '../../types';
 import { IMAGES, SERVICES_DATA, COMPANY_INFO } from '../../data/mockData';
-import { TestimonialCarousel } from '../TestimonialCarousel';
 import {
   Phone,
   ArrowRight,
@@ -42,7 +41,7 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({
             <div className="flex flex-wrap items-center gap-2">
               <div className="inline-flex items-center gap-1.5 bg-[#ba1a1a] text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow-sm animate-pulse">
                 <Zap className="w-3.5 h-3.5 fill-white" />
-                <span>24/7 Mobile Dispatch</span>
+                <span>Mobile Locksmith Service</span>
               </div>
               <div className="inline-flex items-center gap-1.5 bg-[#1d273f] text-[#bec6e0] border border-[#3f465c] text-xs font-semibold px-3 py-1 rounded-full">
                 <ShieldCheck className="w-3.5 h-3.5 text-emerald-400" />
@@ -58,7 +57,7 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({
 
             {/* Subtitle */}
             <p className="text-base sm:text-lg text-[#d4e4fa] max-w-xl leading-relaxed">
-              Locked out of your car, house, or commercial building? Founded and operated by <strong>Daniel Tucker</strong>, our mobile locksmith units provide rapid, damage-free entry, smart lock upgrades, and on-site key programming across <strong>all of South Florida</strong>.
+              Locked out of your car, house, or commercial building? Pro Locksmith offers mobile lockout assistance, smart-lock service, re-keying, and automotive key support across South Florida. Call to confirm current availability.
             </p>
 
             {/* Action CTAs */}
@@ -85,12 +84,12 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({
             <div className="flex flex-wrap items-center gap-4 text-xs md:text-sm text-[#bec6e0] pt-2">
               <div className="flex items-center gap-1.5">
                 <Clock className="w-4 h-4 text-[#F97316]" />
-                <span>15–30 Min Arrival</span>
+                <span>Call for Current ETA</span>
               </div>
               <span className="text-[#3f465c]">•</span>
               <div className="flex items-center gap-1.5">
                 <Award className="w-4 h-4 text-emerald-400" />
-                <span>Licensed & Bonded</span>
+                <span>Confirm Credentials Before Service</span>
               </div>
               <span className="text-[#3f465c]">•</span>
               <div className="flex items-center gap-1.5">
@@ -115,11 +114,11 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({
                     PRO LOCKSMITH FLEET
                   </div>
                   <div className="text-xs text-white font-medium">
-                    Owner: Daniel Tucker • 24/7 Mobile Service
+                    South Florida Mobile Locksmith Service
                   </div>
                 </div>
                 <div className="bg-[#ba1a1a] text-white text-[11px] font-bold px-2.5 py-1 rounded-lg">
-                  15-Min ETA
+                  Call for ETA
                 </div>
               </div>
             </div>
@@ -135,15 +134,15 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({
         <div className="max-w-7xl mx-auto px-4 md:px-8 flex flex-wrap justify-center items-center gap-6 md:gap-14 text-[#45464d]">
           <div className="flex items-center gap-2.5 font-semibold text-sm md:text-base">
             <ShieldCheck className="w-5 h-5 text-emerald-600" />
-            <span>Licensed & Insured</span>
+            <span>Confirm Credentials Before Service</span>
           </div>
           <div className="flex items-center gap-2.5 font-semibold text-sm md:text-base">
             <Clock className="w-5 h-5 text-[#F97316]" />
-            <span>15-Min Arrival</span>
+            <span>Call for Current ETA</span>
           </div>
           <div className="flex items-center gap-2.5 font-semibold text-sm md:text-base">
             <Award className="w-5 h-5 text-[#131b2e]" />
-            <span>Bonded Professionals</span>
+            <span>Request an Estimate Before Work</span>
           </div>
         </div>
       </section>
@@ -180,7 +179,7 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({
                   <span className="font-bold text-lg text-white">Residential</span>
                 </div>
                 <div className="absolute top-3 right-3 bg-[#131b2e]/80 text-white text-xs px-2.5 py-1 rounded-full font-medium backdrop-blur-xs">
-                  From $75
+                  Quote Required
                 </div>
               </div>
               <div className="p-6 flex flex-col flex-grow justify-between">
@@ -194,7 +193,7 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({
                   <ul className="text-xs text-[#556477] space-y-1.5 mb-6">
                     <li className="flex items-center gap-2">
                       <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
-                      <span>House lockouts (non-destructive)</span>
+                      <span>House lockout assistance</span>
                     </li>
                     <li className="flex items-center gap-2">
                       <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
@@ -235,7 +234,7 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({
                   <span className="font-bold text-lg text-white">Commercial</span>
                 </div>
                 <div className="absolute top-3 right-3 bg-[#131b2e]/80 text-white text-xs px-2.5 py-1 rounded-full font-medium backdrop-blur-xs">
-                  From $120
+                  Quote Required
                 </div>
               </div>
               <div className="p-6 flex flex-col flex-grow justify-between">
@@ -290,7 +289,7 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({
                   <span className="font-bold text-lg text-white">Automotive</span>
                 </div>
                 <div className="absolute top-3 right-3 bg-[#131b2e]/80 text-white text-xs px-2.5 py-1 rounded-full font-medium backdrop-blur-xs">
-                  From $85
+                  Quote Required
                 </div>
               </div>
               <div className="p-6 flex flex-col flex-grow justify-between">
@@ -339,18 +338,18 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({
             <div className="space-y-3 flex-grow text-center md:text-left">
               <div className="inline-flex items-center gap-1.5 text-xs font-bold text-[#F97316] uppercase tracking-wider bg-[#fff7ed] px-3 py-1 rounded-full border border-[#ffedd5]">
                 <Award className="w-3.5 h-3.5" />
-                <span>Owner's Personal Guarantee</span>
+                <span>Service Commitment</span>
               </div>
               <h3 className="text-xl md:text-2xl font-bold text-[#191c1e] tracking-tight">
-                "We provide clear, honest pricing before we touch a single lock."
+                Review the estimate and service terms before work begins.
               </h3>
               <p className="text-sm md:text-base text-[#45464d] leading-relaxed max-w-3xl">
-                As the owner of Pro Locksmith, I personally guarantee that our mobile locksmith fleet will treat your emergency with speed, precision, and respect. No hidden dispatch fees, no bait-and-switch pricing, and 100% damage-free entry techniques.
+                Before authorizing work, confirm the service scope, estimate, current ETA, credentials, and any warranty terms directly with Pro Locksmith.
               </p>
               <div className="pt-2 flex flex-wrap items-center justify-center md:justify-start gap-4 text-xs md:text-sm font-semibold text-[#191c1e]">
-                <span className="text-[#F97316] font-bold text-base">Daniel Tucker</span>
+                <span className="text-[#F97316] font-bold text-base">Pro Locksmith</span>
                 <span className="text-[#bec6e0]">|</span>
-                <span className="text-[#556477]">Owner & Master Technician</span>
+                <span className="text-[#556477]">South Florida Mobile Service</span>
                 <span className="text-[#bec6e0]">|</span>
                 <span className="text-[#556477]">Direct: 786-344-5765</span>
               </div>
@@ -371,7 +370,7 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({
               Stranded or Locked Out Right Now?
             </h3>
             <p className="text-[#bec6e0] text-sm md:text-base max-w-xl">
-              Don't wait hours in the cold. Our GPS-dispatched mobile locksmith vans are equipped with modern decoders and key-cutting CNCs.
+              For urgent lockout help, call Pro Locksmith to confirm current availability, service options, and ETA.
             </p>
           </div>
 
@@ -387,17 +386,20 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({
               onClick={() => onNavigate('emergency')}
               className="w-full sm:w-auto bg-[#ffdad6]/20 border border-[#ffdad6]/40 hover:bg-[#ffdad6]/30 text-white font-semibold py-3.5 px-6 rounded-xl text-center transition-all"
             >
-              Track Mobile Van ETA
+              View Emergency Options
             </button>
           </div>
         </div>
       </section>
-
-      {/* Verified Customer Testimonials Carousel Section */}
-      <TestimonialCarousel
-        onEmergencyCall={onEmergencyCall}
-        onRequestQuote={() => onNavigate('quote')}
-      />
+      {/* Verified customer reviews are intentionally omitted until source evidence is available. */}
+      <section className="py-10 md:py-14 bg-[#f7f9fb] border-b border-[#e0e3e5]">
+        <div className="max-w-7xl mx-auto px-4 md:px-8 text-center">
+          <h2 className="text-2xl sm:text-3xl font-bold text-[#191c1e]">Before Service Begins</h2>
+          <p className="text-sm sm:text-base text-[#45464d] max-w-2xl mx-auto mt-3">
+            Confirm the service scope, written estimate, current ETA, credentials, and warranty terms directly before authorizing work.
+          </p>
+        </div>
+      </section>
     </div>
   );
 };
