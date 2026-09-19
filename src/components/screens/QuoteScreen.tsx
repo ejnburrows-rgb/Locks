@@ -35,18 +35,11 @@ export const QuoteScreen: React.FC<QuoteScreenProps> = ({
 
   const [expandedFAQ, setExpandedFAQ] = useState<number | null>(0);
   const [isSubmitted, setIsSubmitted] = useState(false);
-  const [estimatedCost, setEstimatedCost] = useState<string>('$75 - $95');
+  const [estimatedCost, setEstimatedCost] = useState<string>('Estimate after review');
 
   const handleServiceChange = (service: string) => {
-    let cost = '$75 - $95';
-    if (service.includes('Commercial')) cost = '$120 - $250';
-    else if (service.includes('Smart Lock')) cost = '$150 - $320';
-    else if (service.includes('Automotive') || service.includes('Key Fob')) cost = '$85 - $180';
-    else if (service.includes('Rekeying')) cost = '$95 - $160';
-    else if (service.includes('Broken Key')) cost = '$70 - $110';
-
     setFormData((prev) => ({ ...prev, serviceType: service }));
-    setEstimatedCost(cost);
+    setEstimatedCost('Estimate after review');
   };
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -84,7 +77,7 @@ export const QuoteScreen: React.FC<QuoteScreenProps> = ({
             </div>
             <div className="flex items-center gap-1.5 text-xs font-bold text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-full border border-emerald-200">
               <Clock className="w-3.5 h-3.5" />
-              <span>Avg response: 15 mins</span>
+              <span>Call for current ETA</span>
             </div>
           </div>
 
@@ -110,7 +103,7 @@ export const QuoteScreen: React.FC<QuoteScreenProps> = ({
               <h3 className="font-bold text-lg text-[#191c1e]">Service Area & Owner Contact</h3>
               <p className="text-base font-semibold text-[#F97316] mt-0.5">All of South Florida</p>
               <p className="text-xs sm:text-sm text-[#45464d] mt-1">
-                Owner & Master Locksmith: <strong className="text-[#191c1e]">Daniel Tucker</strong>. Direct mobile locksmith units on standby across Miami-Dade, Broward, and Palm Beach counties with an average 15–30 min response time.
+                Contact: <strong className="text-[#191c1e]">Daniel Tucker</strong>. Call to confirm current service coverage, availability, and ETA for your location.
               </p>
             </div>
           </div>
