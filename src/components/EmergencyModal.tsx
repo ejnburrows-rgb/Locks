@@ -53,7 +53,7 @@ export const EmergencyModal: React.FC<EmergencyModalProps> = ({
               {COMPANY_INFO.phone}
             </div>
             <p className="text-xs text-[#556477]">
-              Direct line to our on-duty dispatcher. Average 15–30 min arrival.
+              Call to confirm current availability and ETA.
             </p>
           </div>
 
@@ -110,7 +110,7 @@ export const EmergencyModal: React.FC<EmergencyModalProps> = ({
 
         {/* Footer */}
         <div className="p-4 bg-[#f2f4f6] border-t border-[#e0e3e5] text-center text-xs text-[#556477]">
-          Licensed, Bonded & Insured • Upfront Pricing Guarantee
+          Confirm credentials, estimate, and service terms before authorizing work
         </div>
       </div>
     </div>
